@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class UserController {
-    @RequestMapping(path = "greetings",method = RequestMethod.GET)
+    @RequestMapping(path = {"greetings","hello"},method = {RequestMethod.GET})
     public String greetings(){
         return " This is Jaston Ruggy";
     }
